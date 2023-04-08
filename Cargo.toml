@@ -1,0 +1,11 @@
+[package]
+name = "sql-redactor"
+description = "A library to redact SQL queries for security and observability"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+author = "elbaro <elbaro@users.noreply.github.com>"
+
+[dependencies]
+sqlparser = { version = "0.32.0", features = ["visitor"] }
+thiserror = "1.0.40"
